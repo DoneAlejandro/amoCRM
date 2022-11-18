@@ -1,0 +1,213 @@
+// Стили страницы и контейнера
+.wrapper {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+// Стили элементов хедера
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 61px;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__navigation-wrapper {
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo {
+  &__icon {
+    margin-bottom: 14.88px;
+  }
+
+  &__image {
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+    color: #e4e5ea;
+  }
+}
+.navigation-wrapper {
+  &__nav {
+    max-width: 503px;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e4e5ea;
+  }
+}
+.info {
+  &__number-link {
+    padding-right: 3.5rem;
+  }
+
+  &__number {
+    color: #e4e5ea;
+  }
+
+  &__contact {
+  }
+
+  &__contact-list {
+    display: flex;
+  }
+
+  &__contact-item {
+    color: #e4e5ea;
+    padding-right: 2.5rem;
+  }
+  &__contact-item:last-of-type {
+    padding-right: 0;
+  }
+
+  &__contact-vector {
+  }
+
+  &__contact-phone {
+  }
+}
+.icon-vector {
+}
+.icon-phone {
+}
+.icon-whats {
+}
+
+// Стили эелментов контента
+.content {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+  }
+
+  &__right {
+  }
+}
+.left {
+  display: flex;
+  text-align: start;
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    color: #e4e5ea;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 900;
+      background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+        #e4e5ea;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  &__paragraph {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #e4e5ea;
+  }
+}
+.right {
+  &__title {
+  }
+
+  &__title-up {
+  }
+
+  &__title-down {
+  }
+
+  &__gift {
+  }
+
+  &__gift-up {
+  }
+
+  &__gift-up-left {
+  }
+
+  &__gift-up-left-subtitle {
+  }
+
+  &__gift-up-left-paragraph {
+  }
+
+  &__gift-up-rigt {
+  }
+
+  &__gift-up-rigt-subtitle {
+  }
+
+  &__gift-up-rigt-paragraph {
+  }
+
+  &__gift-down {
+  }
+
+  &__gift-down-left {
+  }
+
+  &__gift-down-left-subtitle {
+  }
+
+  &__gift-down-left-paragraph {
+  }
+
+  &__gift-down-rigt {
+  }
+
+  &__gift-down-rigt-subtitle {
+  }
+
+  &__gift-down-rigt-paragraph {
+  }
+
+  &__btn {
+  }
+}
