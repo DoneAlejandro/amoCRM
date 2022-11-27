@@ -1,5 +1,7 @@
-body {
+body,
+html {
   background-color: #1e1e1e;
+  height: 100%;
 }
 
 // Стили страницы и контейнера
@@ -14,137 +16,6 @@ body {
   margin: 0 auto;
   background-color: #4077f3;
 }
-// .header {
-// 	display: flex;
-// 	width: 100%;
-// 	justify-content: space-between;
-// 	padding-top: 61px;
-// 	position: relative;
-// 	&__logo {
-// 	  display: flex;
-// 	  flex-direction: column;
-// 	}
-// 	&__bolls {
-// 	  position: absolute;
-// 	}
-// 	&__bolls-purple {
-// 	  position: absolute;
-// 	  left: 508px;
-// 	  top: -154px;
-// 	  width: 259px;
-// 	  height: 259px;
-// 	  background: #833ab4;
-// 	  opacity: 0.5;
-// 	  filter: blur(196px);
-// 	}
-  
-// 	&__bolls-purple-small {
-// 	  position: absolute;
-// 	  width: 60px;
-// 	  height: 60px;
-// 	  left: 763px;
-// 	  top: -53px;
-// 	  border-radius: 50%;
-// 	  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
-// 	  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
-// 	  filter: blur(5px);
-// 	  backdrop-filter: blur(2px);
-// 	}
-  
-// 	&__bolls-red {
-// 	  position: absolute;
-// 	  border-radius: 50%;
-// 	  width: 83px;
-// 	  height: 83px;
-// 	  left: 433px;
-// 	  top: 17px;
-// 	  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
-// 	  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
-// 	  backdrop-filter: blur(2px);
-// 	}
-  
-// 	&__navigation-wrapper {
-// 	}
-  
-// 	&__info {
-// 	  display: flex;
-// 	  justify-content: space-between;
-// 	}
-//   }
-//   .logo {
-// 	&__icon {
-// 	  margin-bottom: 14.88px;
-// 	}
-  
-// 	&__image {
-// 	}
-  
-// 	&__title {
-// 	  display: flex;
-// 	  flex-direction: column;
-// 	  font-family: "Montserrat";
-// 	  font-style: normal;
-// 	  font-weight: 300;
-// 	  font-size: 10px;
-// 	  line-height: 12px;
-// 	  color: #e4e5ea;
-// 	}
-//   }
-//   .navigation-wrapper {
-// 	&__nav {
-// 	  max-width: 503px;
-// 	}
-  
-// 	&__nav-list {
-// 	  display: flex;
-// 	  justify-content: space-between;
-// 	  align-items: center;
-// 	}
-  
-// 	&__nav-item {
-// 	  display: flex;
-// 	  justify-content: center;
-// 	  align-items: center;
-// 	  padding: 0 15px;
-// 	}
-  
-// 	&__nav-link {
-// 	  font-weight: 500;
-// 	  font-size: 16px;
-// 	  line-height: 19px;
-// 	  color: #e4e5ea;
-// 	}
-//   }
-//   .info {
-// 	&__number-link {
-// 	  margin-right: 3.5rem;
-// 	}
-  
-// 	&__number {
-// 	  color: #e4e5ea;
-// 	}
-  
-// 	&__contact {
-// 	}
-  
-// 	&__contact-list {
-// 	  display: flex;
-// 	}
-  
-// 	&__contact-item {
-// 	  color: #e4e5ea;
-// 	  padding-right: 2.5rem;
-// 	}
-// 	&__contact-item:last-of-type {
-// 	  padding-right: 0;
-// 	}
-  
-// 	&__contact-vector {
-// 	}
-  
-// 	&__contact-phone {
-// 	}
-//   }
 
 // Стили элементов хедера
 .header {
@@ -153,6 +24,7 @@ body {
   justify-content: space-between;
   padding-top: 61px;
   position: relative;
+
   &__logo {
     display: flex;
     flex-direction: column;
@@ -190,7 +62,7 @@ body {
     width: 83px;
     height: 83px;
     left: 433px;
-    top: 17px;
+    top: 25px;
     background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
     box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
     backdrop-filter: blur(2px);
@@ -225,8 +97,7 @@ body {
 
   &__nav-item {
     display: flex;
-    justify-content: center;
-
+    z-index: 10;
     padding: 0 15px;
   }
 
@@ -264,7 +135,8 @@ body {
   margin-top: 94px;
   display: flex;
   justify-content: space-between;
-  flex: 1 1 auto &__left {
+  flex: 1 1 auto;
+  &__left {
     display: flex;
     text-align: start;
     flex-direction: column;
@@ -358,6 +230,9 @@ body {
       text-fill-color: transparent;
       text-transform: uppercase;
     }
+  }
+  &__gift-on-mobile-devices {
+    display: none;
   }
 
   &__gift {
@@ -566,6 +441,46 @@ body {
     &__title {
       font-size: 36px;
       line-height: 44px;
+    }
+  }
+
+  .right {
+    &__title-up,
+    &__title-down {
+      span {
+        text-transform: lowercase;
+      }
+    }
+
+    &__gift {
+      display: none;
+    }
+    &__gift-on-mobile-devices {
+      display: flex;
+      margin-top: 20px;
+    }
+    &__gift-list-on-mobile-devices {
+      column-count: 2;
+      padding: 0 18px;
+    }
+
+    &__gift-item-on-mobile-devices {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #e4e5ea;
+      position: relative;
+      &::before {
+        content: "";
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+        position: absolute;
+        top: 7px;
+        left: -15px;
+      }
     }
   }
 }
